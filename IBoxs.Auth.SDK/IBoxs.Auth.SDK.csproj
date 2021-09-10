@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EC5D08DE-D6D5-4922-AEF6-465D55031BF5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>IBoxs.Auth.SDK</RootNamespace>
+    <AssemblyName>IBoxs.Auth.SDK</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="ThoughtWorks.QRCode, Version=1.0.4778.30637, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ThoughtWorks.QRCode.1.1.0\lib\ThoughtWorks.QRCode.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="api\addauth.cs" />
+    <Compile Include="api\addcard.cs" />
+    <Compile Include="api\auth.cs" />
+    <Compile Include="api\delauth.cs" />
+    <Compile Include="api\delcard.cs" />
+    <Compile Include="api\getamount.cs" />
+    <Compile Include="api\getbill.cs" />
+    <Compile Include="api\getcardinfo.cs" />
+    <Compile Include="api\getgradelist.cs" />
+    <Compile Include="api\getpaycode.cs" />
+    <Compile Include="api\getpaystate.cs" />
+    <Compile Include="api\getprice.cs" />
+    <Compile Include="api\JsonResponse\AddAuthJson.cs" />
+    <Compile Include="api\JsonResponse\AuthJson.cs" />
+    <Compile Include="api\JsonResponse\DelAuthJson.cs" />
+    <Compile Include="api\JsonResponse\GetAmountJson.cs" />
+    <Compile Include="api\JsonResponse\GetBillJson.cs" />
+    <Compile Include="api\JsonResponse\GetCardJson.cs" />
+    <Compile Include="api\JsonResponse\GetGradeListJson.cs" />
+    <Compile Include="api\JsonResponse\GetPayCodeJson.cs" />
+    <Compile Include="api\JsonResponse\GetPayStateJson.cs" />
+    <Compile Include="api\JsonResponse\GetPriceJson.cs" />
+    <Compile Include="api\JsonResponse\UpdatePriceJson.cs" />
+    <Compile Include="api\updateprice.cs" />
+    <Compile Include="api\usecard.cs" />
+    <Compile Include="AuthApi.cs" />
+    <Compile Include="common\HttpTool.cs" />
+    <Compile Include="common\LibraryTool.cs" />
+    <Compile Include="common\SignCode.cs" />
+    <Compile Include="config\ApiConfig.cs" />
+    <Compile Include="dataEnum\authStatus.cs" />
+    <Compile Include="dataEnum\authType.cs" />
+    <Compile Include="dataEnum\CardStatus.cs" />
+    <Compile Include="dataEnum\PayType.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="result\AmountInfo.cs" />
+    <Compile Include="result\AppGrade.cs" />
+    <Compile Include="result\AppPrice.cs" />
+    <Compile Include="result\AuthResult.cs" />
+    <Compile Include="result\BillInfo.cs" />
+    <Compile Include="result\CardInfo.cs" />
+    <Compile Include="result\PayCode.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

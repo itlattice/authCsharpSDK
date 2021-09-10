@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1622
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IBoxs.Auth.Demo", "IBoxs.Auth.Demo\IBoxs.Auth.Demo.csproj", "{CBC03800-09E3-4472-8E11-43BE2422598D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IBoxs.Auth.SDK", "IBoxs.Auth.SDK\IBoxs.Auth.SDK.csproj", "{EC5D08DE-D6D5-4922-AEF6-465D55031BF5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CBC03800-09E3-4472-8E11-43BE2422598D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBC03800-09E3-4472-8E11-43BE2422598D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBC03800-09E3-4472-8E11-43BE2422598D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBC03800-09E3-4472-8E11-43BE2422598D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC5D08DE-D6D5-4922-AEF6-465D55031BF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC5D08DE-D6D5-4922-AEF6-465D55031BF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC5D08DE-D6D5-4922-AEF6-465D55031BF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC5D08DE-D6D5-4922-AEF6-465D55031BF5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5C2CB0AE-01ED-4BEB-912F-CD86E7E193AD}
+	EndGlobalSection
+EndGlobal
