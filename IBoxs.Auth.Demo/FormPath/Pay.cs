@@ -33,14 +33,16 @@ namespace IBoxs.Auth.Demo.FormPath
             timer1.Interval = 3000;
             timer1.Enabled = true;
         }
-
+        static bool payBool = false;
         private void timer1_Tick(object sender, EventArgs e)
         {
+            if (payBool) return;  //已支付就不再处理
             string order = payCode.Order;
             string msg, time;
-            bool result = MainForm.authApi.GetPayState(order, out msg, out time);
-            if(result)
+            bool result = MainForm.authApi.GetPayState(order, out msg, out time);  //获取支付状态
+            if (result)
             {
+                payBool = true;
                 MessageBox.Show("您于" + time + "支付成功并获得相应授权");
                 this.Close();
                 return;
